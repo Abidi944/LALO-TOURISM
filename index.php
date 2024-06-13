@@ -116,32 +116,25 @@
           </div>
         </section>
         <section class="abuabu" id="destinasi">
-          <div class="layar-dalam">
+        <div class="layar-dalam">
             <h3>Destinasi</h3>
             <p class="ringkasan">
-              Bukit, Pantai, Laut, hingga Goa. Hanya Untukmu
+                Bukit, Pantai, Laut, hingga Goa. Hanya Untukmu
             </p>
             <div class="blog">
                 <?php foreach ($results['objek_wisata'] as $r2) : ?>
                     <div class="area">
-                        <div
-                            class="gambar"
-                            style="background-image: url('<?php echo $r2['media_objek']; ?>')"
-                        ></div>
+                        <div class="gambar" style="background-image: url('<?php echo $r2['media_objek']; ?>')"></div>
                         <div class="text">
                             <article>
                                 <h4><a href="#"><?php echo $r2['nama_objek']; ?></a></h4>
-                                <p>
-                                    <?php echo $r2['deskripsi_objek']; ?>
-                                </p>
+                                <p><?php echo $r2['deskripsi_objek']; ?></p>
                             </article>
                         </div>
                     </div>
-                  <?php endforeach; ?>
-                </div>
-              </div>
+                <?php endforeach; ?>
             </div>
-          </div>
+        </div>
         </section>
         <section id="gallery">
           <div><img src="asset/Pic1.JPG" /></div>

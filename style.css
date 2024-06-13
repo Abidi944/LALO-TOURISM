@@ -174,6 +174,13 @@ nav .logo img.hitam {
 section.abuabu {
   background-color: #f5f6f6;
 }
+.blog {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Menampilkan 3 kolom */
+  gap: 20px; 
+  margin-bottom: 20px;
+}
+
 .tim {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -215,7 +222,7 @@ section#gallery div img:hover {
   border-radius: 5px;
 }
 .blog .area {
-  width: 47%;
+  width: 100%;
   box-shadow: 0px -10px 30px #ccc;
   border-radius: 5px;
   display: flex;
@@ -246,6 +253,7 @@ section#gallery div img:hover {
 .blog .area .text article a:hover {
   color: #ccc;
 }
+
 footer {
   padding: 50px 0px 50px 0px;
   background-color: #343a40;
