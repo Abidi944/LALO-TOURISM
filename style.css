@@ -174,11 +174,10 @@ nav .logo img.hitam {
 section.abuabu {
   background-color: #f5f6f6;
 }
-.tim,
-.blog {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+.tim {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 .tim h6 {
   margin: 0px;
@@ -190,7 +189,7 @@ section.abuabu {
 
 .tim div {
   text-align: center;
-  width: 26%;
+  width: 100%;
 }
 section#gallery {
   display: flex;
