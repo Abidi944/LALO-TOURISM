@@ -121,25 +121,24 @@
             <p class="ringkasan">
               Bukit, Pantai, Laut, hingga Goa. Hanya Untukmu
             </p>
-
-<div class="blog">
-    <?php foreach ($results['objek_wisata'] as $r2) : ?>
-        <div class="area">
-            <div
-                class="gambar"
-                style="background-image: url('<?php echo $r2['media_objek']; ?>')"
-            ></div>
-            <div class="text">
-                <article>
-                    <h4><a href="#"><?php echo $r2['nama_objek']; ?></a></h4>
-                    <p>
-                        <?php echo $r2['deskripsi_objek']; ?>
-                    </p>
-                </article>
-            </div>
-        </div>
-    <?php endforeach; ?>
-</div>
+            <div class="blog">
+                <?php foreach ($results['objek_wisata'] as $r2) : ?>
+                    <div class="area">
+                        <div
+                            class="gambar"
+                            style="background-image: url('<?php echo $r2['media_objek']; ?>')"
+                        ></div>
+                        <div class="text">
+                            <article>
+                                <h4><a href="#"><?php echo $r2['nama_objek']; ?></a></h4>
+                                <p>
+                                    <?php echo $r2['deskripsi_objek']; ?>
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                  <?php endforeach; ?>
+                </div>
               </div>
             </div>
           </div>
@@ -155,23 +154,22 @@
           <div><img src="asset/Pic8.JPG" /></div>
         </section>
         <section id="event">
-          <div class="layar-dalam">
-            <h3>Event</h3>
-            <p class="ringkasan">
-              Mencoba Hal Baru, Hanya Denganmu
-            </p>
-            <div class="tim">
+        <div class="layar-dalam">
+          <h3>Event</h3>
+          <p class="ringkasan">
+            Mencoba Hal Baru, Hanya Denganmu
+          </p>
+          <div class="tim">
             <?php foreach ($results['event'] as $r2) : ?>
-        <div>
-            <img class='fotoset'src="<?php echo $r2['media_event']; ?>" />
-            <h6><?php echo $r2['nama_event']; ?></h6>
-            <span><?php echo $r2['deskripsi_event']; ?></span>
-        </div>
-    <?php endforeach; ?>
-                    </div>
-            </div>
+              <div>
+                <img class='fotoset' src="<?php echo $r2['media_event']; ?>" />
+                <h6><?php echo $r2['nama_event']; ?></h6>
+                <span><?php echo $r2['deskripsi_event']; ?></span>
+              </div>
+            <?php endforeach; ?>
           </div>
-        </section>
+        </div>
+      </section>
       <section id="penginapan">
         <div class="layar-dalam">
           <h3>Penginapan</h3>
@@ -179,15 +177,15 @@
             Tempat yang Nyaman, Menutup Hari yang Menyenangkan
           </p>
           <div class="tim">
-          <?php foreach ($results['penginapan'] as $r2) : ?>
-            <div>
-            <img src="<?php echo $r2['media_penginapan']; ?>" />
-            <h6><?php echo $r2['nama_penginapan']; ?></h6>
-            <span><?php echo $r2['deskripsi_penginapan']; ?></span>
+            <?php foreach ($results['penginapan'] as $r2) : ?>
+              <div>
+                <img src="<?php echo $r2['media_penginapan']; ?>" />
+                <h6><?php echo $r2['nama_penginapan']; ?></h6>
+                <span><?php echo $r2['deskripsi_penginapan']; ?></span>
+              </div>
+            <?php endforeach; ?>
+          </div>
         </div>
-        <?php endforeach; ?>
-    </div>
-</div>
       </section>
       <section id="kuliner">
         <div class="layar-dalam">
@@ -196,16 +194,17 @@
             Hidangan spesial, Hanya Untukmu
           </p>
           <div class="tim">
-          <?php foreach ($results['kuliner'] as $r2) : ?>
-            <div>
-            <img src="<?php echo $r2['media_kuliner']; ?>" />
-            <h6><?php echo $r2['nama_kuliner']; ?></h6>
-            <span><?php echo $r2['deskripsi_kuliner']; ?></span>
-        </div>
-        <?php endforeach; ?>
+            <?php foreach ($results['kuliner'] as $r2) : ?>
+              <div>
+                <img src="<?php echo $r2['media_kuliner']; ?>" />
+                <h6><?php echo $r2['nama_kuliner']; ?></h6>
+                <span><?php echo $r2['deskripsi_kuliner']; ?></span>
+              </div>
+            <?php endforeach; ?>
           </div>
         </div>
       </section>
+
       <section id="souvenir">
         <div class="layar-dalam">
           <h3>Souvenir</h3>
@@ -213,13 +212,13 @@
             Bawalah Pulang, Untuk Mengenang
           </p>
           <div class="tim">
-          <?php foreach ($results['souvenir'] as $r2) : ?>
-            <div>
-            <img src="<?php echo $r2['media_souvenir']; ?>" />
-            <h6><?php echo $r2['nama_souvenir']; ?></h6>
-            <span><?php echo $r2['deskripsi_souvenir']; ?></span>
-        </div>
-        <?php endforeach; ?>
+            <?php foreach ($results['souvenir'] as $r2) : ?>
+              <div>
+                <img src="<?php echo $r2['media_souvenir']; ?>" />
+                <h6><?php echo $r2['nama_souvenir']; ?></h6>
+                <span><?php echo $r2['deskripsi_souvenir']; ?></span>
+              </div>
+            <?php endforeach; ?>
           </div>
         </div>
       </section>
